@@ -6,8 +6,15 @@ $("#currentDay").text("Current Date: " + currentDate);
 var time = moment().format("h a");
 var tasks = document.querySelector(".list-group-item");
 for(var i = 0; i < tasks.clientHeight; i++){
-    console.log(tasks);
+    //console.log(tasks);
 }
 
 
+// save user input tasks
+//var userTasks = document.querySelector(".task-info").value;
+var task = document.getElementsByClassName(".task-info").value;
 
+function saveData(){
+    var userTask = localStorage.setItem(".task-info", task);
+    console.log(userTask);
+}
