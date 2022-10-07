@@ -69,3 +69,8 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  .vertical-line{
+    border-left:6px black;
+    height: 1px;
+  }
